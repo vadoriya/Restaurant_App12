@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.restaurant_app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="30" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.Restaurant_App"
+        android:usesCleartextTraffic="true" >
+        <activity android:name="com.example.restaurant_app.Adminbooktable" />
+        <activity android:name="com.example.restaurant_app.Adminshowrevenue" />
+        <activity android:name="com.example.restaurant_app.vieworderlist" />
+        <activity android:name="com.example.restaurant_app.Book_table" />
+        <activity android:name="com.example.restaurant_app.ComplainReply" />
+        <activity android:name="com.example.restaurant_app.Manage_complain" />
+        <activity android:name="com.example.restaurant_app.AdminShowComplain" />
+        <activity android:name="com.example.restaurant_app.View_manager" />
+        <activity android:name="com.example.restaurant_app.Adminshowmenu" />
+        <activity android:name="com.example.restaurant_app.Viewrevenue" />
+        <activity android:name="com.example.restaurant_app.Viewingrediant" />
+        <activity android:name="com.example.restaurant_app.Itemavailable" />
+        <activity android:name="com.example.restaurant_app.clickeditem" />
+        <activity android:name="com.example.restaurant_app.Manage_menu" />
+        <activity android:name="com.example.restaurant_app.WaiterForgotPassword" />
+        <activity android:name="com.example.restaurant_app.CookForgotPassword" />
+        <activity android:name="com.example.restaurant_app.ManagerForgotPassword" />
+        <activity android:name="com.example.restaurant_app.AdminForgotPassword" />
+        <activity android:name="com.example.restaurant_app.UserForgetPassword" />
+        <activity
+            android:name="com.example.restaurant_app.MainActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.restaurant_app.UserLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.UserRegister"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.UserHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.AdminLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.ManagerLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.Cart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.Feedback"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.Menu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.ManagerHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.AddCook"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.Viewfeedback"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.ViewWaiter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.AddWaiter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.ViewCook"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.AdminHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.AdminShowFeedback"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.Adminvieworder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.AdminStaffDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.AdminAddManager"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.CookLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.CookHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.Cook_Gujrati"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.Cook_Chienese"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.Cook_Punjabi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.Cook_Southindian"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.Cook_Unavailableorder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.WaiterLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.Waiter_Home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.Waiter_Tablelist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.Waiter_Takeorder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.Waiter_Tablewise_Orderlist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.Waiter_Change_Orderlist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.Waiter_Sent_Orderlist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.Waiter_Ready_Orderlist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.Waiter_Complainlist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.ViewOrder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.restaurant_app.RatingAvarage"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

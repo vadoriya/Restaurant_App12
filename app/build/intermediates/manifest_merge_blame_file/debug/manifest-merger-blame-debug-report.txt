@@ -1,0 +1,338 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.restaurant_app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:6:5-67
+11-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:7:5-79
+12-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:7:22-76
+13
+14    <application
+14-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:9:5-164:19
+15        android:allowBackup="true"
+15-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:10:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.3.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\b234a824af7fd98a5c54fc0522824a91\core-1.3.1\AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:icon="@mipmap/ic_launcher"
+18-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:11:9-43
+19        android:label="@string/app_name"
+19-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:12:9-41
+20        android:roundIcon="@mipmap/ic_launcher_round"
+20-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:13:9-54
+21        android:supportsRtl="true"
+21-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:14:9-35
+22        android:testOnly="true"
+23        android:theme="@style/Theme.Restaurant_App"
+23-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:15:9-52
+24        android:usesCleartextTraffic="true" >
+24-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:16:9-44
+25        <activity android:name="com.example.restaurant_app.Adminbooktable" />
+25-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:18:9-61
+25-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:18:19-49
+26        <activity android:name="com.example.restaurant_app.Adminshowrevenue" />
+26-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:19:9-54
+26-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:19:19-51
+27        <activity android:name="com.example.restaurant_app.vieworderlist" />
+27-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:20:9-51
+27-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:20:19-48
+28        <activity android:name="com.example.restaurant_app.Book_table" />
+28-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:21:9-48
+28-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:21:19-45
+29        <activity android:name="com.example.restaurant_app.ComplainReply" />
+29-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:22:9-51
+29-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:22:19-48
+30        <activity android:name="com.example.restaurant_app.Manage_complain" />
+30-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:23:9-53
+30-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:23:19-50
+31        <activity android:name="com.example.restaurant_app.AdminShowComplain" />
+31-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:24:9-55
+31-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:24:19-52
+32        <activity android:name="com.example.restaurant_app.View_manager" />
+32-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:25:9-50
+32-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:25:19-47
+33        <activity android:name="com.example.restaurant_app.Adminshowmenu" />
+33-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:26:9-51
+33-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:26:19-48
+34        <activity android:name="com.example.restaurant_app.Viewrevenue" />
+34-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:27:9-49
+34-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:27:19-46
+35        <activity android:name="com.example.restaurant_app.Viewingrediant" />
+35-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:28:9-52
+35-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:28:19-49
+36        <activity android:name="com.example.restaurant_app.Itemavailable" />
+36-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:29:9-51
+36-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:29:19-48
+37        <activity android:name="com.example.restaurant_app.clickeditem" />
+37-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:30:9-49
+37-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:30:19-46
+38        <activity android:name="com.example.restaurant_app.Manage_menu" />
+38-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:31:9-49
+38-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:31:19-46
+39        <activity android:name="com.example.restaurant_app.WaiterForgotPassword" />
+39-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:32:9-58
+39-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:32:19-55
+40        <activity android:name="com.example.restaurant_app.CookForgotPassword" />
+40-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:33:9-56
+40-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:33:19-53
+41        <activity android:name="com.example.restaurant_app.ManagerForgotPassword" />
+41-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:34:9-59
+41-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:34:19-56
+42        <activity android:name="com.example.restaurant_app.AdminForgotPassword" />
+42-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:35:9-57
+42-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:35:19-54
+43        <activity android:name="com.example.restaurant_app.UserForgetPassword" />
+43-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:36:9-56
+43-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:36:19-53
+44        <activity
+44-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:37:9-45:20
+45            android:name="com.example.restaurant_app.MainActivity"
+45-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:38:13-41
+46            android:screenOrientation="portrait" >
+46-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:39:13-49
+47            <intent-filter>
+47-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:40:13-44:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:41:17-69
+48-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:41:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:43:17-77
+50-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:43:27-74
+51            </intent-filter>
+52        </activity>
+53        <activity
+53-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:46:9-48:52
+54            android:name="com.example.restaurant_app.UserLogin"
+54-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:47:13-38
+55            android:screenOrientation="portrait" />
+55-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:48:13-49
+56        <activity
+56-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:49:9-51:52
+57            android:name="com.example.restaurant_app.UserRegister"
+57-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:50:13-41
+58            android:screenOrientation="portrait" />
+58-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:51:13-49
+59        <activity
+59-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:52:9-54:52
+60            android:name="com.example.restaurant_app.UserHome"
+60-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:53:13-37
+61            android:screenOrientation="portrait" />
+61-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:54:13-49
+62        <activity
+62-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:55:9-57:52
+63            android:name="com.example.restaurant_app.AdminLogin"
+63-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:56:13-39
+64            android:screenOrientation="portrait" />
+64-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:57:13-49
+65        <activity
+65-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:58:9-60:52
+66            android:name="com.example.restaurant_app.ManagerLogin"
+66-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:59:13-41
+67            android:screenOrientation="portrait" />
+67-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:60:13-49
+68        <activity
+68-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:61:9-63:52
+69            android:name="com.example.restaurant_app.Cart"
+69-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:62:13-33
+70            android:screenOrientation="portrait" />
+70-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:63:13-49
+71        <activity
+71-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:64:9-66:52
+72            android:name="com.example.restaurant_app.Feedback"
+72-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:65:13-37
+73            android:screenOrientation="portrait" />
+73-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:66:13-49
+74        <activity
+74-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:67:9-69:52
+75            android:name="com.example.restaurant_app.Menu"
+75-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:68:13-33
+76            android:screenOrientation="portrait" />
+76-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:69:13-49
+77        <activity
+77-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:70:9-72:52
+78            android:name="com.example.restaurant_app.ManagerHome"
+78-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:71:13-40
+79            android:screenOrientation="portrait" />
+79-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:72:13-49
+80        <activity
+80-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:73:9-75:52
+81            android:name="com.example.restaurant_app.AddCook"
+81-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:74:13-36
+82            android:screenOrientation="portrait" />
+82-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:75:13-49
+83        <activity
+83-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:76:9-78:52
+84            android:name="com.example.restaurant_app.Viewfeedback"
+84-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:77:13-41
+85            android:screenOrientation="portrait" />
+85-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:78:13-49
+86        <activity
+86-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:79:9-81:52
+87            android:name="com.example.restaurant_app.ViewWaiter"
+87-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:80:13-39
+88            android:screenOrientation="portrait" />
+88-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:81:13-49
+89        <activity
+89-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:82:9-84:52
+90            android:name="com.example.restaurant_app.AddWaiter"
+90-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:83:13-38
+91            android:screenOrientation="portrait" />
+91-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:84:13-49
+92        <activity
+92-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:85:9-87:52
+93            android:name="com.example.restaurant_app.ViewCook"
+93-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:86:13-37
+94            android:screenOrientation="portrait" />
+94-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:87:13-49
+95        <activity
+95-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:88:9-90:52
+96            android:name="com.example.restaurant_app.AdminHome"
+96-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:89:13-38
+97            android:screenOrientation="portrait" />
+97-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:90:13-49
+98        <activity
+98-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:91:9-93:52
+99            android:name="com.example.restaurant_app.AdminShowFeedback"
+99-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:92:13-46
+100            android:screenOrientation="portrait" />
+100-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:93:13-49
+101        <activity
+101-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:94:9-96:52
+102            android:name="com.example.restaurant_app.Adminvieworder"
+102-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:95:13-43
+103            android:screenOrientation="portrait" />
+103-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:96:13-49
+104        <activity
+104-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:97:9-99:52
+105            android:name="com.example.restaurant_app.AdminStaffDetails"
+105-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:98:13-46
+106            android:screenOrientation="portrait" />
+106-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:99:13-49
+107        <activity
+107-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:100:9-102:52
+108            android:name="com.example.restaurant_app.AdminAddManager"
+108-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:101:13-44
+109            android:screenOrientation="portrait" />
+109-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:102:13-49
+110        <activity
+110-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:105:9-107:52
+111            android:name="com.example.restaurant_app.CookLogin"
+111-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:106:13-38
+112            android:screenOrientation="portrait" />
+112-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:107:13-49
+113        <activity
+113-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:108:9-110:52
+114            android:name="com.example.restaurant_app.CookHome"
+114-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:109:13-37
+115            android:screenOrientation="portrait" />
+115-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:110:13-49
+116        <activity
+116-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:111:9-113:52
+117            android:name="com.example.restaurant_app.Cook_Gujrati"
+117-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:112:13-41
+118            android:screenOrientation="portrait" />
+118-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:113:13-49
+119        <activity
+119-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:114:9-116:52
+120            android:name="com.example.restaurant_app.Cook_Chienese"
+120-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:115:13-42
+121            android:screenOrientation="portrait" />
+121-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:116:13-49
+122        <activity
+122-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:117:9-119:52
+123            android:name="com.example.restaurant_app.Cook_Punjabi"
+123-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:118:13-41
+124            android:screenOrientation="portrait" />
+124-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:119:13-49
+125        <activity
+125-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:120:9-122:52
+126            android:name="com.example.restaurant_app.Cook_Southindian"
+126-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:121:13-45
+127            android:screenOrientation="portrait" />
+127-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:122:13-49
+128        <activity
+128-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:123:9-125:52
+129            android:name="com.example.restaurant_app.Cook_Unavailableorder"
+129-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:124:13-50
+130            android:screenOrientation="portrait" />
+130-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:125:13-49
+131        <activity
+131-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:128:9-130:52
+132            android:name="com.example.restaurant_app.WaiterLogin"
+132-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:129:13-40
+133            android:screenOrientation="portrait" />
+133-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:130:13-49
+134        <activity
+134-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:131:9-133:52
+135            android:name="com.example.restaurant_app.Waiter_Home"
+135-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:132:13-40
+136            android:screenOrientation="portrait" />
+136-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:133:13-49
+137        <activity
+137-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:134:9-136:52
+138            android:name="com.example.restaurant_app.Waiter_Tablelist"
+138-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:135:13-45
+139            android:screenOrientation="portrait" />
+139-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:136:13-49
+140        <activity
+140-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:137:9-139:52
+141            android:name="com.example.restaurant_app.Waiter_Takeorder"
+141-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:138:13-45
+142            android:screenOrientation="portrait" />
+142-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:139:13-49
+143        <activity
+143-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:140:9-142:52
+144            android:name="com.example.restaurant_app.Waiter_Tablewise_Orderlist"
+144-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:141:13-55
+145            android:screenOrientation="portrait" />
+145-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:142:13-49
+146        <activity
+146-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:143:9-145:52
+147            android:name="com.example.restaurant_app.Waiter_Change_Orderlist"
+147-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:144:13-52
+148            android:screenOrientation="portrait" />
+148-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:145:13-49
+149        <activity
+149-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:146:9-148:52
+150            android:name="com.example.restaurant_app.Waiter_Sent_Orderlist"
+150-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:147:13-50
+151            android:screenOrientation="portrait" />
+151-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:148:13-49
+152        <activity
+152-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:149:9-151:52
+153            android:name="com.example.restaurant_app.Waiter_Ready_Orderlist"
+153-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:150:13-51
+154            android:screenOrientation="portrait" />
+154-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:151:13-49
+155        <activity
+155-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:152:9-154:52
+156            android:name="com.example.restaurant_app.Waiter_Complainlist"
+156-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:153:13-48
+157            android:screenOrientation="portrait" />
+157-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:154:13-49
+158        <activity
+158-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:157:9-159:52
+159            android:name="com.example.restaurant_app.ViewOrder"
+159-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:158:13-38
+160            android:screenOrientation="portrait" />
+160-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:159:13-49
+161        <activity
+161-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:160:9-162:52
+162            android:name="com.example.restaurant_app.RatingAvarage"
+162-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:161:13-42
+163            android:screenOrientation="portrait" />
+163-->G:\Restaurant_App20\app\src\main\AndroidManifest.xml:162:13-49
+164    </application>
+165
+166</manifest>

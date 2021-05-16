@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Waiter">
+        <menu>
+            <item android:title="Home"
+                android:id="@+id/home"
+                android:icon="@drawable/ic_home"/>
+
+            <item android:title="Table List"
+                android:id="@+id/tablelist"
+                android:icon="@drawable/update_stock"/>
+
+            <item android:title="Take Order"
+                android:id="@+id/takeorder"
+                android:icon="@drawable/update_stock"/>
+
+            <item android:title="Tablewise Orderlist"
+                android:id="@+id/tablewiseorderlist"
+                android:icon="@drawable/update_stock"/>
+
+            <item android:title="Changes In Orderlist"
+                android:id="@+id/changesinorderlist"
+                android:icon="@drawable/update_stock"/>
+
+            <item android:title="Sent Order To Cook"
+                android:id="@+id/sendoredrtocook"
+                android:icon="@drawable/sendorder"/>
+
+
+            <item android:title="Ready To Serve Orederlist"
+                android:id="@+id/readytoserveorderlist"
+                android:icon="@drawable/readytoserve"/>
+
+            <item android:title="Complain"
+                android:id="@+id/complain"
+                android:icon="@drawable/update_stock"/>
+
+        </menu>
+    </item>
+    <item android:title="App">
+        <menu>
+            <item android:title="Logout"
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_logout"/>
+
+        </menu>
+    </item>
+</menu>
+
+

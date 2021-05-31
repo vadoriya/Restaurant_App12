@@ -3,6 +3,8 @@ package com.example.restaurant_app;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,13 +22,22 @@ public class Waiter_Home extends AppCompatActivity {
     private Toolbar toolbar;
     private ActionBarDrawerToggle toggle;
 
+    Button tablelist,takeorder,tablwiseorderlist,changesinorder,sendordertokichen,readyorder;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.waiter_home);
 
+        tablelist = (Button)findViewById(R.id.tablelist);
+        takeorder = (Button)findViewById(R.id.takeorder);
+        tablwiseorderlist = (Button)findViewById(R.id.tablewiseorderlist);
+        changesinorder = (Button)findViewById(R.id.changesinorder);
+        sendordertokichen = (Button)findViewById(R.id.sendordertocook);
+        readyorder = (Button)findViewById(R.id.redyorderlist);
 
-    drawer = findViewById(R.id.waiter_drawer);
+
+        drawer = findViewById(R.id.waiter_drawer);
         navigationView = findViewById(R.id.navigation);
         toolbar = findViewById(R.id.toolbar);
 
@@ -36,40 +47,61 @@ public class Waiter_Home extends AppCompatActivity {
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+        tablelist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent tablelist = new Intent(Waiter_Home.this, Waiter_Tablelist.class);
+                startActivity(tablelist);
+
+            }
+        });
+
+        takeorder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent takeorder = new Intent(Waiter_Home.this, Waiter_Takeorder.class);
+                startActivity(takeorder);
+            }
+        });
+
+        changesinorder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent changeinorder = new Intent(Waiter_Home.this, Waiter_Change_Orderlist.class);
+                startActivity(changeinorder);
+            }
+        });
+
+        tablwiseorderlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent tabwiseorderlist = new Intent(Waiter_Home.this, Waiter_Tablewise_Orderlist.class);
+                startActivity(tabwiseorderlist);
+            }
+        });
+
+        sendordertokichen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sendordertokichen = new Intent(Waiter_Home.this, Waiter_Sent_Orderlist.class);
+                startActivity(sendordertokichen);
+            }
+        });
+
+        readyorder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent readyorder = new Intent(Waiter_Home.this, Waiter_Ready_Orderlist.class);
+                startActivity(readyorder);
+            }
+        });
+
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 drawer.closeDrawer(GravityCompat.START);
                 switch (item.getItemId()) {
                     case R.id.home:
-                        break;
-
-                    case R.id.tablelist:
-                        Intent tlist = new Intent(Waiter_Home.this, Waiter_Tablelist.class);
-                        startActivity(tlist);
-                        break;
-                    case R.id.takeorder:
-                        Intent takeorder = new Intent(Waiter_Home.this, Waiter_Takeorder.class);
-                        startActivity(takeorder);
-                        break;
-                    case R.id.tablewiseorderlist:
-                        Intent twiseorderlist = new Intent(Waiter_Home.this, Waiter_Tablewise_Orderlist.class);
-                        startActivity(twiseorderlist);
-                        break;
-
-                    case R.id.changesinorderlist:
-                        Intent changeorder = new Intent(Waiter_Home.this, Waiter_Change_Orderlist.class);
-                        startActivity(changeorder);
-                        break;
-
-                    case R.id.sendoredrtocook:
-                        Intent sendorder = new Intent(Waiter_Home.this, Waiter_Sent_Orderlist.class);
-                        startActivity(sendorder);
-                        break;
-
-                    case R.id.readytoserveorderlist:
-                        Intent readyorder = new Intent(Waiter_Home.this, Waiter_Ready_Orderlist.class);
-                        startActivity(readyorder);
                         break;
 
                     case R.id.complain:

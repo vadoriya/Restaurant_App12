@@ -3,8 +3,6 @@ package com.example.restaurant_app;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,17 +16,10 @@ import com.google.android.material.navigation.NavigationView;
 
 public class CookHome extends AppCompatActivity {
 
-//    private TabLayout tabLayout;
-//    private ViewPager viewPager;
-//    private TabItem pending,progress;
-//    public PagerAdapter pagerAdapter;
-
     private DrawerLayout drawer;
     private NavigationView navigationView;
     private Toolbar toolbar;
     private ActionBarDrawerToggle toggle;
-
-    Button gujraticook,punjabicook,southindiancook,chienesecook;
 
 //    GridView gridView;
 //    Orderdetails orderdetails = new Orderdetails();
@@ -39,15 +30,6 @@ public class CookHome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cook_home);
 
-//        tabLayout = (TabLayout) findViewById(R.id.tablayout);
-//        pending = (TabItem)findViewById(R.id.pendingtab);
-//        progress = (TabItem)findViewById(R.id.progresstab);
-//        viewPager = findViewById(R.id.viewpager);
-
-        gujraticook = (Button)findViewById(R.id.gujraticook);
-        punjabicook = (Button)findViewById(R.id.punjabicook);
-        southindiancook = (Button)findViewById(R.id.southindiancook);
-        chienesecook = (Button)findViewById(R.id.chienesecook);
 
         drawer = findViewById(R.id.cook_drawer);
         navigationView = findViewById(R.id.navigation);
@@ -60,71 +42,6 @@ public class CookHome extends AppCompatActivity {
         // gridView = (GridView)findViewById(R.id.gridview);
         //listingdata();
 
-
-//        pagerAdapter = new com.example.restaurant_app.PagerAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
-//        viewPager.setAdapter(pagerAdapter);
-//
-//        tabLayout.setOnTabSelectedListener(new TabLayout.BaseOnTabSelectedListener() {
-//            @Override
-//            public void onTabSelected(TabLayout.Tab tab) {
-//                viewPager.setCurrentItem(tab.getPosition());
-//                if (tab.getPosition() == 0){
-//                    pagerAdapter.notifyDataSetChanged();
-//                }
-//                else if (tab.getPosition() == 1){
-//                    pagerAdapter.notifyDataSetChanged();
-//                }
-////                else if (tab.getPosition() == 2){
-////                    pagerAdapter.notifyDataSetChanged();
-////                }
-//            }
-//
-//            @Override
-//            public void onTabUnselected(TabLayout.Tab tab) {
-//
-//            }
-//
-//            @Override
-//            public void onTabReselected(TabLayout.Tab tab) {
-//
-//            }
-//        });
-//
-//        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-
-        gujraticook.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent gujarticook = new Intent(CookHome.this, Cook_Gujrati.class);
-                startActivity(gujarticook);
-
-            }
-        });
-
-        punjabicook.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent punjabicook = new Intent(CookHome.this, Cook_Punjabi.class);
-                startActivity(punjabicook);
-
-            }
-        });
-        southindiancook.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent southindiancook = new Intent(CookHome.this,  Cook_Southindian.class);
-                startActivity(southindiancook);
-
-            }
-        });
-        chienesecook.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent chienesecook = new Intent(CookHome.this, Cook_Chienese.class);
-                startActivity(chienesecook);
-
-            }
-        });
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -222,21 +139,6 @@ public class CookHome extends AppCompatActivity {
 //            tname.setText(orders.get(position).getName());
 //            temail.setText(orders.get(position).getEmail());
 //            tpayment.setText(orders.get(position).getPaymentMethod());
-//
-//            btn1.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    Intent intent = new Intent(getApplicationContext(),cook_receive_order.class);
-//                    startActivity(intent);
-//                    Toast.makeText(context, "order is receive succesfully...", Toast.LENGTH_SHORT).show();
-//                }
-//            });
-//            btn2.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    Toast.makeText(context, "....", Toast.LENGTH_SHORT).show();
-//                }
-//            });
 //
 //            return convertView;
 //        }

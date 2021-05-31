@@ -32,52 +32,7 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
-            <Button
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:text="Gujrati Cook"
-                android:id="@+id/gujraticook"
-                android:textSize="25dp"
-                android:background="@drawable/buttons"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="35dp"/>
 
-            <Button
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:text="Punjabi Cook"
-                android:id="@+id/punjabicook"
-                android:textSize="25dp"
-                android:background="@drawable/buttons"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="35dp"/>
-            <Button
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:text="Cheinese Cook"
-                android:id="@+id/chienesecook"
-                android:textSize="25dp"
-                android:background="@drawable/buttons"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="35dp"/>
-
-            <Button
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:text="South Indian Cook"
-                android:id="@+id/southindiancook"
-                android:textSize="25dp"
-                android:background="@drawable/buttons"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="35dp"/>
-
-
-        </LinearLayout>
 
     </LinearLayout>
     <com.google.android.material.navigation.NavigationView

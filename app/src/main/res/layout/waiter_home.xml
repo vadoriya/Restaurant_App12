@@ -28,6 +28,75 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_margin="15dp"
+                android:text="Table List"
+                android:id="@+id/tablelist"
+                android:textSize="25dp"
+                android:background="@drawable/buttons"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_margin="15dp"
+                android:text="Take Orders"
+                android:id="@+id/takeorder"
+                android:textSize="25dp"
+                android:background="@drawable/buttons"
+                android:layout_gravity="center_horizontal"
+                />
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_margin="15dp"
+                android:text="Table  Wise Orderlist"
+                android:id="@+id/tablewiseorderlist"
+                android:textSize="25dp"
+                android:background="@drawable/buttons"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_margin="15dp"
+                android:text="Changes In    Order"
+                android:id="@+id/changesinorder"
+                android:textSize="25dp"
+                android:background="@drawable/buttons"
+                android:layout_gravity="center_horizontal" />
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_margin="15dp"
+                android:text="Send Order To kichen"
+                android:id="@+id/sendordertocook"
+                android:textSize="25dp"
+                android:background="@drawable/buttons"
+                android:layout_gravity="center_horizontal" />
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_margin="15dp"
+                android:text="Ready Orderlist"
+                android:id="@+id/redyorderlist"
+                android:textSize="25dp"
+                android:background="@drawable/buttons"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+        </LinearLayout>
+
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView

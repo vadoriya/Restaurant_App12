@@ -4,6 +4,7 @@ import com.example.restaurant_app.ForgotResult;
 import com.example.restaurant_app.LoginResult;
 import com.example.restaurant_app.Menu;
 import com.example.restaurant_app.model.PendingOrder;
+import com.example.restaurant_app.model.Waiter_parsel.Parsalorder;
 import com.example.restaurant_app.modeladmin.Getmanager;
 import com.example.restaurant_app.modeladmin.Staffdetails;
 import com.example.restaurant_app.modelmanager.Availableitem.Availableitem;
@@ -135,5 +136,8 @@ public interface RetrofitInterface {
     //cook pending
     @PUT("/order/list")
     Call<PendingOrder> cookpending();
+
+    @GET("/order/parcelorders")
+    Call<Parsalorder> Showparsal();
 
 }

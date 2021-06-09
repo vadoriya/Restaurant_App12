@@ -6,9 +6,13 @@
                 android:id="@+id/home"
                 android:icon="@drawable/ic_home"/>
 
+<!--            <item android:title="Parsel"-->
+<!--                android:id="@+id/parsel"-->
+<!--                android:icon="@drawable/ic_baseline_watch_later_24"/>-->
+
             <item android:title="Complain"
                 android:id="@+id/complain"
-                android:icon="@drawable/update_stock"/>
+                android:icon="@drawable/ic_baseline_comment_24"/>
 
         </menu>
     </item>

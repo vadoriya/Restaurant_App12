@@ -18,14 +18,14 @@
             android:padding="5dp"
             android:textSize="20sp"
 
-            android:text="ID :"/>
+            android:text="Name :"/>
 
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:textSize="20sp"
-            android:text="Table No :"
+            android:text="Email :"
             />
 
 <!--        <TextView-->
@@ -35,12 +35,12 @@
 <!--            android:textSize="20sp"-->
 <!--            android:text="Persone:"/>-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:textSize="20sp"
-            android:text="Status :"/>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="5dp"-->
+<!--            android:textSize="20sp"-->
+<!--            android:text="Status :"/>-->
 
         <!--        <TextView-->
         <!--            android:layout_width="match_parent"-->
@@ -65,20 +65,20 @@
 
 
             <TextView
-                android:id="@+id/tid"
+                android:id="@+id/parsalname"
                 android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:text="id"
+                android:text="name"
                 />
             <TextView
-                android:id="@+id/ttable"
+                android:id="@+id/parsalemail"
                 android:padding="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:text="table"
+                android:text="email"
                 />
 
 <!--            <TextView-->
@@ -90,14 +90,14 @@
 <!--                android:text="size"-->
 <!--                />-->
 
-            <TextView
-                android:id="@+id/tstatus"
-                android:padding="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="status"
-                />
+<!--            <TextView-->
+<!--                android:id="@+id/tstatus"-->
+<!--                android:padding="5dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="20sp"-->
+<!--                android:text="status"-->
+<!--                />-->
 
             <!--            <TextView-->
             <!--                android:id="@+id/twaiting"-->

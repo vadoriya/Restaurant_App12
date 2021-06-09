@@ -22,7 +22,7 @@ public class Waiter_Home extends AppCompatActivity {
     private Toolbar toolbar;
     private ActionBarDrawerToggle toggle;
 
-    Button tablelist,takeorder,tablwiseorderlist,changesinorder,sendordertokichen,readyorder;
+    Button tablelist,takeorder,tablwiseorderlist,parsellist,sendordertokichen,readyorder;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,10 +31,10 @@ public class Waiter_Home extends AppCompatActivity {
 
         tablelist = (Button)findViewById(R.id.tablelist);
         takeorder = (Button)findViewById(R.id.takeorder);
-        tablwiseorderlist = (Button)findViewById(R.id.tablewiseorderlist);
-        changesinorder = (Button)findViewById(R.id.changesinorder);
-        sendordertokichen = (Button)findViewById(R.id.sendordertocook);
-        readyorder = (Button)findViewById(R.id.redyorderlist);
+      //  tablwiseorderlist = (Button)findViewById(R.id.tablewiseorderlist);
+        parsellist = (Button)findViewById(R.id.parselorderlist);
+       // sendordertokichen = (Button)findViewById(R.id.sendordertocook);
+       // readyorder = (Button)findViewById(R.id.redyorderlist);
 
 
         drawer = findViewById(R.id.waiter_drawer);
@@ -64,21 +64,21 @@ public class Waiter_Home extends AppCompatActivity {
             }
         });
 
-        changesinorder.setOnClickListener(new View.OnClickListener() {
+        parsellist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent changeinorder = new Intent(Waiter_Home.this, Waiter_Change_Orderlist.class);
+                Intent changeinorder = new Intent(Waiter_Home.this, Waiter_parsel.class);
                 startActivity(changeinorder);
             }
         });
 
-        tablwiseorderlist.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent tabwiseorderlist = new Intent(Waiter_Home.this, Waiter_Tablewise_Orderlist.class);
-                startActivity(tabwiseorderlist);
-            }
-        });
+//        tablwiseorderlist.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent tabwiseorderlist = new Intent(Waiter_Home.this, Waiter_Tablewise_Orderlist.class);
+//                startActivity(tabwiseorderlist);
+//            }
+//        });
 
         sendordertokichen.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,13 +88,13 @@ public class Waiter_Home extends AppCompatActivity {
             }
         });
 
-        readyorder.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent readyorder = new Intent(Waiter_Home.this, Waiter_Ready_Orderlist.class);
-                startActivity(readyorder);
-            }
-        });
+//        readyorder.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent readyorder = new Intent(Waiter_Home.this, Waiter_Ready_Orderlist.class);
+//                startActivity(readyorder);
+//            }
+//        });
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -103,6 +103,11 @@ public class Waiter_Home extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.home:
                         break;
+
+//                    case R.id.parsel:
+//                        Intent parsel = new Intent(Waiter_Home.this, Waiter_parsel.class);
+//                        startActivity(parsel);
+//                        break;
 
                     case R.id.complain:
                         Intent complain = new Intent(Waiter_Home.this, Waiter_Complainlist.class);
@@ -117,7 +122,7 @@ public class Waiter_Home extends AppCompatActivity {
                 return true;
             }
         });
-    }
+   }
 
     @Override
     public void onBackPressed() {
